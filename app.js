@@ -126,14 +126,25 @@ let b = 1;
 //     console.log('Отменено');
 // }
 
-let n = 10;
+// let n = 10;
+//
+// nextPrime:
+// for ( let num = 2; num <= n; num++) {
+//     for (let j = 2; j < num; j++) { // проверить, делится ли число..
+//         if (num % j == 0) continue nextPrime; // не подходит, берём следующее
+//         console.log('J- '+j);
+//     }
+//     console.log('Num- '+num);
+// }
 
-nextPrime:
-for ( let num = 2; num <= n; num++) {
-    for (let j = 2; j < num; j++) { // проверить, делится ли число..
-        if (num % j == 0) continue nextPrime; // не подходит, берём следующее
-        console.log('J- '+j);
+// function checkAge(age) {
+//     return (age > 18) || confirm('Родители разрешили?');
+// }
+
+function min(a,b) {
+    if(a !== b) {
+        (a > b) ? console.log(b) : console.log(a)
     }
-    console.log('Num- '+num);
 }
 
+min(70, 1);
