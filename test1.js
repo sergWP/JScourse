@@ -25,9 +25,7 @@ let personalMovieDB = {
 // }
 
 let i = 0;
-
-while (i < 2) {
-
+do {
     let movie = prompt('Last movie', '');
     let imdb = prompt('IMDB', '');
 
@@ -38,7 +36,7 @@ while (i < 2) {
         alert('Please, enter correct data');
     }
 
-}
+} while (i < 2);
 
 
 if(personalMovieDB.count <= 10) {
