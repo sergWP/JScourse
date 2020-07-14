@@ -5,6 +5,6 @@
     <script type="application/javascript" src="test1.js"></script>
 </header>
 <body>
-    <h1>Test 1</h1>
+    <h1>Course</h1>
 </body>
 </html>
