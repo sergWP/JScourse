@@ -149,20 +149,48 @@ function min(a,b) {
 
 //min(70, 1);
 
-const number = +prompt('Введите число между 0 и 3', '');
+// 2.13
+// const number = +prompt('Введите число между 0 и 3', '');
+//
+// switch (number) {
+//     case 0:
+//         alert('Вы ввели число 0');
+//         break;
+//
+//     case 1:
+//         alert('Вы ввели число 1');
+//         break;
+//
+//     case 2:
+//     case 3:
+//         alert('Вы ввели число 2, а может и 3');
+//         break;
+// }
 
-switch (number) {
-    case 0:
-        alert('Вы ввели число 0');
-        break;
+// 2.14
+// function checkAge(age) {
+//     let result = (age > 18) || confirm('Родители разрешили?');
+//     console.log(result);
+// }
+// checkAge(55);
 
-    case 1:
-        alert('Вы ввели число 1');
-        break;
+// 2.15
+// let fun = function () {
+//     console.log('Hello');
+// };
+// fun();
 
-    case 2:
-    case 3:
-        alert('Вы ввели число 2, а может и 3');
-        break;
-}
+// const sum = (a, b) => { return a + b };
+// console.log(sum(50, 5));
 
+// 2.16
+let ask = (question, yes, no) => {
+    if (confirm(question)) yes()
+    else no();
+};
+
+ask(
+    "Вы согласны?",
+    function() { alert("Вы согласились."); },
+    function() { alert("Вы отменили выполнение."); }
+);
