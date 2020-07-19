@@ -42,7 +42,7 @@ function rememberMyFilms() {
     }
 
 }
-rememberMyFilms();
+//rememberMyFilms();
 
 // detectPersonalLevel()
 function detectPersonalLevel() {
@@ -72,14 +72,11 @@ function showMyDB() {
 showMyDB();
 
 // writeYourGentres()
-
-let gentre;
-
 function writeYourGentres() {
 
     for (let i = 1; i <=3; i++) {
 
-        gentre = prompt(`You favorite gentres number ${i}`);
+        let gentre = prompt(`You favorite gentres number ${i}`);
 
         if(gentre || gentre !== '' || gentre !== null) {
             personalMovieDB.gentres[i - 1] = gentre;
@@ -91,4 +88,4 @@ function writeYourGentres() {
     }
 
 }
-writeYourGentres();
+//writeYourGentres();
